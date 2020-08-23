@@ -159,12 +159,16 @@
     border-radius: 0;
     box-shadow: 0 5px 6px rgba(black, .1);
     color: $body-color;
+    height: 100%;
 
-    .card {
-        &-img {
-            height: 100%;
-            object-fit: cover;
-            border-radius: 0;
+
+    &-h {
+        .card {
+            &-img {
+                height: 100%;
+                object-fit: cover;
+                border-radius: 0;
+            }
         }
     }
 
