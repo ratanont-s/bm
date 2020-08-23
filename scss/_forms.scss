@@ -1,0 +1,46 @@
+.form-check-car-type {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 3.5rem;
+
+    .form-check {
+        &-input {
+            display: none;
+
+            &:checked~.form-check-label {
+                color: $orange;
+
+                .form-check-icon .a {
+                    fill: $orange;
+                }
+            }
+        }
+
+        &-label {
+            cursor: pointer;
+
+            svg {
+                margin-bottom: .5rem;
+            }
+
+            @include font-size(18);
+        }
+    }
+}
+
+.form-control {
+    border-width: 0;
+    border-bottom-width: 1px;
+    background-color: transparent;
+
+    &:focus {
+        box-shadow: none;
+        outline: none;
+        background-color: transparent;
+    }
+}
+
+select.form-control {
+    appearance: none;
+    background: url('../img/Icon-awesome-chevron-down.svg') no-repeat right center/auto;
+}

@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&family=Russo+One&display=swap');
+@import './variables';
+@import './bootstrap/bootstrap.scss';
+
+@import './header', './footer';
+
+@import './forms', './cards', './slick';
+
+// Pages
+@import './pages/home';

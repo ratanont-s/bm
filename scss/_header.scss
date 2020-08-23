@@ -1,0 +1,37 @@
+header {
+    .navbar {
+        background: $black url("../img/bg-header.jpg") no-repeat center center/cover;
+
+        &-brand {
+            @include media-breakpoint-down(md) {
+                img {
+                    height: 50px;
+                }
+            }
+        }
+
+        &-toggler {
+            color: $white;
+            border-color: $white;
+        }
+
+        &-nav {
+            .nav {
+                &-item {
+                    &.active .nav-link {
+                        font-weight: normal;
+                        border-bottom: 1px solid $orange;
+                    }
+                }
+
+                &-link {
+                    color: $white;
+                    font-weight: 300;
+                    @include font-size(20);
+
+
+                }
+            }
+        }
+    }
+}

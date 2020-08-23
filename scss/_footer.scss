@@ -1,0 +1,114 @@
+footer {
+    .footer {
+        &-contact {
+            list-style: none;
+            padding-left: 0;
+            font-weight: 300;
+
+            li {
+                display: flex;
+                align-items: center;
+            }
+
+            &-icon {
+                color: $orange;
+                min-width: 2rem;
+                text-align: center;
+                margin-right: 0.5rem;
+            }
+
+            a {
+                &:not(:hover) {
+                    color: $white;
+                }
+            }
+        }
+
+        &-social {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                display: inline-block;
+
+                a:hover {
+                    opacity: .8;
+                }
+            }
+        }
+
+        &-link {
+            list-style: none;
+            padding-left: 0;
+            font-size: small;
+            font-weight: 300;
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                padding: 0 .5rem;
+
+                &:not(:last-child) {
+                    border-right: 1px solid $white;
+                }
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        &-location {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+                background-color: $orange;
+                padding: 1rem;
+                font-weight: 300;
+                margin-bottom: 0.5rem;
+
+                a {
+                    color: $body-color;
+                }
+
+                &:hover {
+                    background-color: $white;
+
+                    .footer-location-icon {
+                        color: $white;
+                    }
+                }
+            }
+
+            &-title {
+                display: flex;
+                align-items: center;
+            }
+
+            &-icon {
+                background-color: $black;
+                width: 36px;
+                height: 36px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+                color: $orange;
+                margin-right: 1rem;
+            }
+
+            @include media-breakpoint-only(md) {
+                display: flex;
+
+                li {
+                    margin: 0 .5rem;
+                }
+            }
+        }
+    }
+}

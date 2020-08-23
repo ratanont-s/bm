@@ -1,0 +1,20 @@
+// Colors
+$blue:#0061DE;
+$red:#DA3B22;
+$orange:#FF7300;
+$black: #000000;
+
+$primary: $orange;
+
+$theme-colors: ("blue": $blue,
+    "red": $red,
+    "orange": $orange,
+    "black": $black);
+
+// Fonts
+$font-family-base: 'Mitr',
+sans-serif;
+$enable-responsive-font-sizes: true;
+
+// Links
+$link-hover-decoration: none;
