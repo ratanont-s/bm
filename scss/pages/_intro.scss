@@ -1,0 +1,78 @@
+#introPage {
+    min-height: 100vh;
+    background: url('../../assets/img/bg-intro.jpg') no-repeat center center/cover;
+
+    main {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2.5rem 0;
+    }
+
+    .card {
+        border-width: 0;
+        border-radius: 0;
+    }
+
+    .text-heading {
+        position: relative;
+        margin-bottom: 1.5rem;
+
+        h2 {
+            font-weight: normal;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    .form-control {
+        border-width: 1px;
+        border-radius: $input-border-radius;
+        padding: $input-padding-y $input-padding-x;
+    }
+
+    select.form-control {
+        padding-right: 1.5rem;
+        background: url('../img/Icon-awesome-chevron-down.svg') no-repeat right 8px center/auto;
+    }
+
+    .form-check-car-type {
+        margin-bottom: 1rem;
+
+        .form-check {
+            &-icon {
+                svg {
+                    width: 80px;
+                    height: 31px;
+                }
+            }
+
+            &-label {
+                font-size: .75rem;
+            }
+        }
+    }
+
+    .intro-link {
+        .btn {
+            border-radius: 10rem;
+            width: 100%;
+            @include font-size(30);
+            border-width: 0.25rem;
+            border-style: solid;
+
+            &-sale {
+                background: linear-gradient(93.41deg, #DA3B22 16.61%, #841503 64.51%, #DA3B22 93.9%);
+                color: $white;
+                border-color: $yellow;
+            }
+
+            &-home {
+                background-color: $white;
+                color: $orange;
+                border-color: $white;
+            }
+        }
+    }
+}
