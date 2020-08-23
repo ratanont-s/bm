@@ -9,10 +9,27 @@
     &:hover {
         background: url('../img/bg-card-promotion.jpg') no-repeat center center/cover;
         color: $white;
+
+        .card {
+            &-img {
+                overflow: hidden;
+
+                img {
+                    transform: scale(1.1);
+                    transition: all .3s ease;
+
+                }
+            }
+
+            &-title {
+                color: $white;
+            }
+        }
     }
 
     .card {
         &-img {
+            display: block;
             position: relative;
 
             &-tag {
@@ -25,6 +42,7 @@
                 font-weight: 300;
                 display: flex;
                 border-radius: 3px;
+                z-index: 1;
             }
         }
 
@@ -56,7 +74,10 @@
         }
 
         &-title {
+            display: block;
+            color: $body-color;
             @include font-size(18);
+            margin-bottom: 0.5rem;
         }
 
         &-detail {
@@ -113,6 +134,10 @@
 
         .card-price-sub {
             background-color: $white;
+            color: $body-color;
+        }
+
+        .card-title {
             color: $body-color;
         }
     }

@@ -20,9 +20,13 @@
         }
     }
 
+    section {
+        padding: 2.5rem 0;
+    }
+
     #carSearch {
         margin-top: -1.5rem;
-        padding-bottom: 2.5rem;
+        padding-top: 0;
 
         .text-heading {
             position: relative;
@@ -53,7 +57,7 @@
         }
 
         @include media-breakpoint-up(lg) {
-            margin-top: -5rem;
+            margin-top: -6rem;
 
             .card {
 
@@ -67,18 +71,11 @@
 
     #brands {
         .text-heading {
-            span {
-                position: relative;
+            margin-bottom: 0;
 
+            span {
                 &::before {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    margin: 0 auto;
-                    width: 80%;
-                    border-bottom: 1px solid $white;
+                    border-bottom-color: $white;
                 }
             }
         }
@@ -94,6 +91,12 @@
             &-slide {
                 img {
                     margin: 0 auto;
+                }
+
+                &:hover {
+                    img {
+                        filter: drop-shadow(0 0 .5rem rgba(white, .25));
+                    }
                 }
             }
 
