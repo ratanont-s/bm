@@ -3,13 +3,17 @@ $blue:#0061DE;
 $red:#DA3B22;
 $orange:#FF7300;
 $black: #000000;
+$white: #ffffff;
+$line: #00B900;
 
 $primary: $orange;
 
 $theme-colors: ("blue": $blue,
     "red": $red,
     "orange": $orange,
-    "black": $black);
+    "black": $black,
+    "white": $white,
+    "line": $line);
 
 // Fonts
 $font-family-base: 'Mitr',

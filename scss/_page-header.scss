@@ -1,0 +1,43 @@
+.page-header {
+    background: url('../img/bg-page-header.jpg') no-repeat center center/cover;
+    padding: 4rem 0;
+    color: $white;
+    text-align: center;
+
+    &-link {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0.25rem;
+
+        li {
+            position: relative;
+
+            &:not(:first-child) {
+                padding-left: 0.5rem;
+            }
+
+            &:not(:last-child) {
+                padding-right: 1rem;
+
+                &::before {
+                    content: '/';
+                    position: absolute;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    &-text {
+        margin-bottom: 0;
+        font-weight: normal;
+        @include font-size(56);
+
+        strong {
+            font-family: "Russo One";
+            font-weight: normal;
+        }
+    }
+}
