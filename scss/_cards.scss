@@ -300,12 +300,15 @@
                 }
             }
         }
+        &-footer{
+            background-color: transparent;
+        }
     }
 
+  
     &:hover {
-        background: url('../img/bg_card_cars.jpg') no-repeat center center/cover;
+        background-color: $orange;
         color: $white;
-
         .card {
 
             &-title,
@@ -313,6 +316,9 @@
             &-price-start strong,
             &-price-normal strong {
                 color: $white;
+            }
+            &-footer{
+                border-top-color: rgba($white,.25);
             }
         }
     }
@@ -357,6 +363,23 @@
                 &-price-normal strong {
                     color: $white;
                 }
+            }
+        }
+    }  
+    &-special{
+        background: url('../img/bg_card_cars.jpg') no-repeat center center/cover;
+        .card{
+            &-title,
+            &-text,
+            &-detail,
+            &-price,
+            &-price-start,
+            &-price-start strong,
+            &-price-normal strong {
+                color: $white;
+            }
+            &-footer{
+                border-top-color: rgba($white,.25);
             }
         }
     }
