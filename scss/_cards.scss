@@ -423,3 +423,63 @@
         }
     }
 }
+
+.card-car-compare{
+    width: 250px;
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: 0 0 .75rem rgba(black, .3);
+    .card{
+        &-header{
+            background-color: transparent;
+            cursor: pointer;
+            position: relative;
+            padding-right: 2rem;
+            &::before{
+                content: '\f107';
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                position: absolute;
+                top: 50%;
+                right: 1rem;
+                transform: translateY(-50%);
+            }
+            &[aria-expanded=false]{
+                &::before{
+                    content: '\f106';
+                }
+            }
+        }
+        &-list{
+            list-style: none;
+            padding-left: 0;
+            li{
+                display: flex;
+                &:not(:last-child){
+                    margin-bottom: 0.5rem;
+                }
+            }
+            &-text{
+                font-size: small;
+                font-weight: 300;
+                b{
+                    display: block;
+                    font-weight: 500;
+                }
+            }
+            .btn{
+                margin-left: auto;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        &-footer{
+            border-top-width: 0;
+            background-color: transparent;
+        }
+    }
+}
