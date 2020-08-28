@@ -4,7 +4,7 @@
     border-width: 0;
     border-radius: 0;
     box-shadow: 0 5px 6px rgba(black, .1);
-    margin: .5rem .5rem 1rem;
+    margin: 1rem .5rem;
 
     &:hover {
         background: url('../img/bg-card-promotion.jpg') no-repeat center center/cover;
@@ -115,10 +115,6 @@
         background-color: $white;
         color: $orange;
         box-shadow: 0 0 10px rgba(black, .1);
-    }
-
-    @include media-breakpoint-up(lg) {
-        margin: 1rem;
     }
 }
 
@@ -713,8 +709,8 @@
     padding: 1rem;
     border: 5px solid $yellow;
     border-radius: 0;
-    background-color: $red;
     color: $white;
+    background: $red url('../img/bg-card-sale.png') no-repeat right top/auto;
     .card{
         &-title{
             font-weight: normal;
@@ -762,6 +758,70 @@
                 @include font-size(14);
                 margin-bottom: 0.5rem;
             }
+        }
+        &-profile{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            &-img{
+                width: 82px;
+                height: 82px;
+                object-fit: cover;
+                border-radius: .5rem;
+                margin-right: 0.5rem;
+            }
+            &-name{
+                @include font-size(20);
+                font-weight: normal;
+            }
+        }
+        &-contact{
+            list-style: none;
+            padding-left: 0;
+            &-item{
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+            &-link{
+                @include font-size(32);
+                color: $yellow;
+                small{
+                    display: block;
+                    margin-bottom: -1rem;
+                    @include font-size(14);
+                    font-weight: 300;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.card-detail{
+    border-width: 0;
+    border-radius: 0;
+    background-color: $light;
+    box-shadow: 0 5px 6px rgba(black, .1);
+    .card{
+        &-title{
+            font-weight: normal;
+            span {
+                position: relative;
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 80%;
+                    border-bottom: 2px solid $orange;
+                }
+            }
+        }
+        &-text{
+            @include font-size(18);
+            font-weight: 300;
         }
     }
 }
