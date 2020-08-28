@@ -254,6 +254,7 @@
             &-item {
                 display: inline-flex;
                 align-items: center;
+                margin-bottom: 0.5rem;
 
                 &:not(:last-child) {
                     margin-right: 1rem;
@@ -312,7 +313,6 @@
         color: $white;
 
         .card {
-
             &-title,
             &-price,
             &-price-start strong,
@@ -322,6 +322,10 @@
 
             &-footer {
                 border-top-color: rgba($white, .25);
+                .btn-orange{
+                    background-color: $white;
+                    color: $orange;
+                }
             }
         }
     }
@@ -580,7 +584,7 @@
         }
     }
     &-special{
-        background: linear-gradient(270.29deg, #DA3B22 1.95%, #941D0A 99.78%);
+        background: $red-gd;
         color: $white;
     }
 }
@@ -663,6 +667,100 @@
             .form-control{
                 border: 1px solid $input-border-color;
                 border-radius: $input-border-radius;
+            }
+        }
+    }
+}
+
+.card-branch{
+    padding: 1rem;
+    background-color: $light;
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: 0 5px 6px rgba(black, .1);
+    .card{
+        &-img{
+            height: 120px;
+            border-radius: 0;
+        }
+        &-title{
+            @include font-size(18);
+            text-align: center;
+        }
+        &-tel{
+            display: block;
+            @include font-size(24);
+            background: $blue-gd;
+            padding: .75rem 1rem;
+            border-radius: .5rem;
+            color: $yellow;
+
+            small{
+                display: block;
+                @include font-size(14);
+                font-weight: 300;
+                color: $white;
+                margin-bottom: -0.5rem;
+            }
+            &:hover{
+                filter: saturate(1.5);
+            }
+        }
+    }
+}
+
+.card-sale-contact{
+    padding: 1rem;
+    border: 5px solid $yellow;
+    border-radius: 0;
+    background-color: $red;
+    color: $white;
+    .card{
+        &-title{
+            font-weight: normal;
+            border-bottom: 2px solid rgba($white, .25);
+            span{
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    bottom: 0;
+                    border-bottom: 2px solid $yellow;
+                }
+            }
+        }
+        &-list{
+            list-style: none;
+            padding-left: 0;
+            &-item{
+                display: flex;
+                padding-bottom: 0.5rem;
+                &:not(:last-child){
+                    margin-bottom: 0.5rem;
+                    border-bottom: 2px solid rgba($white,.5);
+                }
+            }
+            &-img{
+                width: 82px;
+                height: 82px;
+                object-fit: cover;
+                border-radius: .5rem;
+                margin-right: 0.5rem;
+            }
+            &-detail{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .btn{
+                    font-size: 8px;
+                    padding: .25rem .5rem;
+                }
+            }
+            &-name{
+                @include font-size(14);
+                margin-bottom: 0.5rem;
             }
         }
     }

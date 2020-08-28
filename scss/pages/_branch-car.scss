@@ -1,0 +1,18 @@
+#branchCarPage{
+    .branch{
+        &-heading{
+            &-logo{
+                height: 72px;
+            }
+            &-text{
+                @include font-size(24);
+                font-weight: normal;
+                margin-bottom: 0;
+            }
+            &-subtext{
+                display: block;
+                font-weight: 300;
+            }
+        }
+    }
+}

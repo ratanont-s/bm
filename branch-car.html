@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>BM MOTOR GROUP</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+</head>
+
+<body id="branchCarPage">
+    <header class="shadow sticky-top">
+        <div class="bg-black py-2 border-bottom border-orange">
+            <div class="container">
+                <div class="row align-items-lg-center">
+                    <div class="col">
+                        <a href="tel:+66922476666" class="text-light">
+                            <span class="d-none d-md-inline-block">HOT LINE: 092-247-6666, </span>
+                            <button type="button" class="btn btn-link btn-sm d-md-none">
+                                <i class="fas fa-phone-alt"></i>
+                            </button>
+                        </a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer" class="text-light">
+                            <span class="d-none d-md-inline-block">Line ID: @bmmotorgroup</span>
+                            <button type="button" class="btn btn-link btn-sm d-md-none">
+                                <i class="fab fa-line"></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                        <a href="#" class="btn btn-blue btn-sm">
+                            <img src="./assets/img/icon-star.svg" alt="" class="img-fluid">
+                            <span class="d-none d-lg-inline-block">รถเข้าใหม่</span>
+                        </a>
+                        <a href="#" class="btn btn-red btn-sm">
+                            <img src="./assets/img/icon-fire.svg" alt="" class="img-fluid">
+                            <span class="d-none d-lg-inline-block">รถราคาพิเศษ</span>
+                        </a>
+                        <a href="#" class="btn btn-orange btn-sm">
+                            <img src="./assets/img/icon-delivery.svg" alt="" class="img-fluid">
+                            <span class="d-none d-lg-inline-block">ขายรถกับเรา</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/logo.png" alt="BM MOTOR GROUP" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="all-car.html">รถทั้งหมด</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">โปรโมชั่น</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">คำนวณค่างวด</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ศูนย์บริการมาตรฐาน</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <ul class="page-header-link">
+                    <li>หน้าหลัก</li>
+                    <li>รถทั้งหมด</li>
+                </ul>
+                <h1 class="page-header-text">รถทั้งหมด <strong>BM MOTOR GROUP</strong></h1>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-xl">
+                    <div class="branch-heading">
+                        <div class="form-row align-items-center">
+                            <div class="col-md d-flex mb-3 mb-md-0">
+                                <img src="./assets/img/logo-RJ.svg" alt="" class="branch-heading-logo mr-3">
+                                <h2 class="branch-heading-text">
+                                    <span class="text-orange">สาขา</span> ROJANA AUTO CAR
+                                    <div class="branch-heading-subtext">รถทั้งหมด <span class="text-orange">999</span> คัน</div>
+                                </h2>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-row">
+                                    <label for="" class="col-form-label col-auto font-weight-light">เรียงตามใหม่</label>
+                                    <div class="col">
+                                        <select name="" id="" class="form-control border-bottom-0">
+                                            <option selected>ใหม่สุด</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row justify-content-lg-between mb-3">
+                            <div class="col-md">
+                                <ul class="list-share text-center text-md-left">
+                                    <li class="d-none d-md-inline-block">
+                                        Share</li>
+                                    <li>
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <img src="./assets/img/Facebook.svg" alt="Facebook" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <img src="./assets/img/Instagram.svg" alt="Instagram" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <img src="./assets/img/Twitter.svg" alt="Twitter" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <img src="./assets/img/Pinterest.svg" alt="Pinterest" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <img src="./assets/img/Youtube.svg" alt="Youtube" class="img-fluid">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                                            <img src="./assets/img/Line.svg" alt="LINE" class="img-fluid">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-row">
+                                    <div class="col">
+                                        <button type="button" class="btn btn-red btn-block btn-sm"><i class="fas fa-fire"></i>
+                                            รถราคาพิเศษ</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="button" class="btn btn-blue btn-block btn-sm"><i class="far fa-star"></i>
+                                            รถเข้าใหม่</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-cars mb-3">
+                        <span class="card-tag">
+                            <i class="far fa-star"></i> รถเข้าใหม่
+                        </span>
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-xl-3">
+                                <div class="card-img py-lg-3 pl-lg-3">
+                                    <img src="./assets/img/img-promotion.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="col-lg-auto align-self-lg-center order-lg-last">
+                                <div class="card-price px-3 py-lg-3">
+                                    <div class="card-price-start">ผ่อนเริ่มต้น <strong>20,000</strong></div>
+                                    <div class="card-price-normal">ราคา <strong><del>100,000</del></strong></div>
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">MB1470 TOYOTA HILUX VIGO SMARTCAB 2.7 J MT 2011</h5>
+                                    <p class="card-text">
+                                        แอร์, แอร์หลัง, วิทยุ-CD, MP3, จอ LCD, กระจกไฟฟ้า,กระจกมองข้าง
+                                        ปรับไฟฟ้า, Airbag, เบรก ABS, เบาะหนัง, พวงมาลัยเพาเวอร์
+                                    </p>
+                                    <ul class="card-detail mb-0">
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/hatchback-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">น้ำเงิน</div>
+                                        </li>
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/gas-station-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">HYBRID</div>
+                                        </li>
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/timing-belt-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">1798 CC.</div>
+                                        </li>
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/manual-transmission-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">AT</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row justify-content-between">
+                                <div class="col-md-auto">
+                                    <button type="button"
+                                        class="btn btn-white btn-block shadow-sm text-orange mb-3 mb-md-0">เปรียบเทียบราคา</button>
+                                </div>
+                                <div class="col-md-6 col-lg-5">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <a href="tel:+" class="btn btn-orange btn-block"><i
+                                                    class="fas fa-phone-alt"></i> ติดต่อเรา</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                                class="btn btn-line btn-block"><i class="fab fa-line"></i>
+                                                แชทผ่านไลน์</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-cars card-cars-special mb-3">
+                        <span class="card-tag">
+                            <i class="far fa-star"></i> รถเข้าใหม่
+                        </span>
+                        <div class="row no-gutters">
+                            <div class="col-lg-4 col-xl-3">
+                                <div class="card-img py-lg-3 pl-lg-3">
+                                    <img src="./assets/img/img-promotion.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                            <div class="col-lg-auto align-self-lg-center order-lg-last">
+                                <div class="card-price px-3 py-lg-3">
+                                    <div class="card-price-start">ผ่อนเริ่มต้น <strong>20,000</strong></div>
+                                    <div class="card-price-normal">ราคา <strong><del>100,000</del></strong></div>
+                                </div>
+                            </div>
+                            <div class="col-lg">
+                                <div class="card-body p-3">
+                                    <h5 class="card-title">MB1470 TOYOTA HILUX VIGO SMARTCAB 2.7 J MT 2011</h5>
+                                    <p class="card-text">
+                                        แอร์, แอร์หลัง, วิทยุ-CD, MP3, จอ LCD, กระจกไฟฟ้า,กระจกมองข้าง
+                                        ปรับไฟฟ้า, Airbag, เบรก ABS, เบาะหนัง, พวงมาลัยเพาเวอร์
+                                    </p>
+                                    <ul class="card-detail mb-0">
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/hatchback-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">น้ำเงิน</div>
+                                        </li>
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/gas-station-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">HYBRID</div>
+                                        </li>
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/timing-belt-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">1798 CC.</div>
+                                        </li>
+                                        <li class="card-detail-item">
+                                            <div class="card-detail-icon">
+                                                <img src="./assets/img/manual-transmission-outlined.svg" alt="">
+                                            </div>
+                                            <div class="card-detail-text">AT</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row justify-content-between">
+                                <div class="col-md-auto">
+                                    <button type="button"
+                                        class="btn btn-white btn-block shadow-sm text-orange mb-3 mb-md-0">เปรียบเทียบราคา</button>
+                                </div>
+                                <div class="col-md-6 col-lg-5">
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <a href="tel:+" class="btn btn-orange btn-block"><i
+                                                    class="fas fa-phone-alt"></i> ติดต่อเรา</a>
+                                        </div>
+                                        <div class="col">
+                                            <a href="http://" target="_blank" rel="noopener noreferrer"
+                                                class="btn btn-line btn-block"><i class="fab fa-line"></i>
+                                                แชทผ่านไลน์</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="mb-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link page-link-arrow" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link page-link-arrow" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-3">
+                    <div class="row">
+                        <div class="col-md col-xl-12 mb-3">
+                            <div class="card card-branch h-100">
+                                <img src="./assets/img/logo-RJ.svg" alt="" class="card-img">
+                                <h5 class="card-title">สาขา ROJANA AUTO CAR</h5>
+                                <a href="tel:+" class="card-tel mb-3">
+                                    <small>Office</small>
+                                    xxx-xxx-xxxx
+                                </a>
+                                <div class="text-center">
+                                    <small>Social media</small>
+                                    <ul class="list-share list-share-lg">
+                                        <li>
+                                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/img/Facebook.svg" alt="Facebook">
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                                <img src="./assets/img/Line.svg" alt="Line">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="http://" target="_blank" rel="noopener noreferrer"
+                                    class="btn btn-white btn-block btn-lg btn-shadow"><img
+                                        src="./assets/img/google-maps.png" alt="Google maps" class="img-fluid">
+                                    ดูแผนที่</a>
+                            </div>
+                        </div>
+                        <div class="col-md col-xl-12 mb-3">
+                            <div class="card card-sale-contact h-100">
+                                <h5 class="card-title">
+                                    <span>ติดต่อฝ่ายขาย</span>
+                                </h5>
+                                <ul class="card-list mb-0">
+                                    <li class="card-list-item">
+                                        <img src="./assets/img/sale-1.png" alt="" class="card-list-img">
+                                        <div class="card-list-detail">
+                                            <div class="card-list-name">Kathryn Murphy</div>
+                                            <div class="form-row mt-auto">
+                                                <div class="col-sm-auto col-xl-12 mb-2 mb-sm-0 mb-xl-2">
+                                                    <a href="tel:+" class="btn btn-orange btn-block"><i
+                                                            class="fas fa-phone-alt"></i> โทร xxx-xxx-xxxx</a>
+                                                </div>
+                                                <div class="col-sm-auto col-xl-12">
+                                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                                        class="btn btn-line btn-block"><i class="fab fa-line"></i>
+                                                        แชทผ่านไลน์</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="card-list-item">
+                                        <img src="./assets/img/sale-2.png" alt="" class="card-list-img">
+                                        <div class="card-list-detail">
+                                            <div class="card-list-name">Kathryn Murphy</div>
+                                            <div class="form-row mt-auto">
+                                                <div class="col-sm-auto col-xl-12 mb-2 mb-sm-0 mb-xl-2">
+                                                    <a href="tel:+" class="btn btn-orange btn-block"><i
+                                                            class="fas fa-phone-alt"></i> โทร xxx-xxx-xxxx</a>
+                                                </div>
+                                                <div class="col-sm-auto col-xl-12">
+                                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                                        class="btn btn-line btn-block"><i class="fab fa-line"></i>
+                                                        แชทผ่านไลน์</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="card-list-item">
+                                        <img src="./assets/img/sale-3.png" alt="" class="card-list-img">
+                                        <div class="card-list-detail">
+                                            <div class="card-list-name">Kathryn Murphy</div>
+                                            <div class="form-row mt-auto">
+                                                <div class="col-sm-auto col-xl-12 mb-2 mb-sm-0 mb-xl-2">
+                                                    <a href="tel:+" class="btn btn-orange btn-block"><i
+                                                            class="fas fa-phone-alt"></i> โทร xxx-xxx-xxxx</a>
+                                                </div>
+                                                <div class="col-sm-auto col-xl-12">
+                                                    <a href="http://" target="_blank" rel="noopener noreferrer"
+                                                        class="btn btn-line btn-block"><i class="fab fa-line"></i>
+                                                        แชทผ่านไลน์</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="question" class="bg-orange">
+            <div class="container">
+                <img src="./assets/img/Have_a_question_.png" alt="Have a question" class="question-bg img-fluid">
+                <div class="question-body">
+                    <h2 class="question-title">Have a question?</h2>
+                    <p class="text-white mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua.
+                    </p>
+                    <div class="form-row">
+                        <div class="col-sm col-md-auto mb-3">
+                            <a href="#" class="btn btn-black btn-lg btn-block">CONTACT US <i
+                                    class="fas fa-caret-right"></i></a>
+                        </div>
+                        <div class="col-sm col-md-auto mb-3">
+                            <a href="tel:+224000221133" class="btn btn-light btn-lg btn-block"><i
+                                    class="fas fa-phone-volume"></i> 224 000 22 11 33</a>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="./assets/img/question-logo.png" alt="" class="question-logo d-none d-lg-block">
+        </section>
+    </main>
+    <footer class="bg-dark text-white pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 d-flex flex-column">
+                    <div class="row">
+                        <div class="col-lg">
+                            <div class="row align-items-center text-center">
+                                <div class="col-6 mb-3">
+                                    <img src="./assets/img/logo-BM.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <img src="./assets/img/logo-car-home.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <img src="./assets/img/logo-RJ3.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <img src="./assets/img/logo-RJ.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg">
+                            <div class="row">
+                                <div class="col-md col-lg-12">
+                                    <h5>โขว์รูมรถมือสอง BM MOTOR GROUP</h5>
+                                    <p>
+                                        ต.คานหาม อ.อุทัย จ.พระนครศรีอยุธยา 13210 อยู่บนถนนโรจนะ ตรงข้ามทางเข้าวัดคานหาม
+                                        ติดปั้ม ปตท.คานหาม เบอร์โทร 092-247-6666
+                                    </p>
+                                </div>
+                                <div class="col-md-auto col-lg-12">
+                                    <ul class="footer-contact">
+                                        <li>
+                                            <div class="footer-contact-icon">
+                                                <i class="fas fa-phone-alt"></i>
+                                            </div>
+                                            <a href="tel:+66922476666">Tel:092-247-6666</a>
+                                        </li>
+                                        <li>
+                                            <div class="footer-contact-icon">
+                                                <i class="fas fa-fax"></i>
+                                            </div>
+                                            Fax: 999-999-999
+                                        </li>
+                                        <li>
+                                            <div class="footer-contact-icon">
+                                                <i class="far fa-envelope"></i>
+                                            </div>
+                                            <a href="mailto:sales@bmmotorgroup.com">Email: sales@bmmotorgroup.com</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="footer-social mt-auto text-center text-lg-left">
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/Facebook.svg" alt="Facebook" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/Instagram.svg" alt="Instagram" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/Twitter.svg" alt="Twitter" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/Pinterest.svg" alt="Pinterest" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/Youtube.svg" alt="Youtube" class="img-fluid">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <img src="./assets/img/Line.svg" alt="LINE" class="img-fluid">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-link justify-content-center justify-content-lg-start">
+                        <li><a href="#">หน้าแรก</a></li>
+                        <li><a href="#">รถทั้งหมด</a></li>
+                        <li><a href="#">โปรโมชั่น</a></li>
+                        <li><a href="#">คำนวณค่างด</a></li>
+                        <li><a href="#">ข่าวสาร กิจกรรม</a></li>
+                        <li><a href="#">รีวิวรถ</a></li>
+                        <li><a href="#">ลูกค้าของเรา</a></li>
+                        <li><a href="#">ศูนย์บริการมาตรญาน</a></li>
+                        <li><a href="#">ติดต่อเรา</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <ul class="footer-location">
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <h5 class="footer-location-title">
+                                    <div class="footer-location-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    Rojana Auto car
+                                </h5>
+                                <p class="mb-0">
+                                    88/8 หมู่ 4 ตำบล,คานหาม อำเภอ อุทัย
+                                    จังหวัด พระนครศรีอยุธยา 13210
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <h5 class="footer-location-title">
+                                    <div class="footer-location-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    Rojana Auto car
+                                </h5>
+                                <p class="mb-0">
+                                    88/8 หมู่ 4 ตำบล,คานหาม อำเภอ อุทัย
+                                    จังหวัด พระนครศรีอยุธยา 13210
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                                <h5 class="footer-location-title">
+                                    <div class="footer-location-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    Rojana Auto car
+                                </h5>
+                                <p class="mb-0">
+                                    88/8 หมู่ 4 ตำบล,คานหาม อำเภอ อุทัย
+                                    จังหวัด พระนครศรีอยุธยา 13210
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-orange text-black text-center text-md-left font-weight-light py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        copright reserved BM MOTOR GROUP
+                    </div>
+                    <div class="col-md-auto small">
+                        Powered by ThaiAutoWeb
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha512-kBFfSXuTKZcABVouRYGnUo35KKa1FBrYgwG4PAx7Z2Heroknm0ca2Fm2TosdrrI356EDHMW383S3ISrwKcVPUw=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
