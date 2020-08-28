@@ -1,0 +1,19 @@
+#detailCarPage {
+    .detail {
+        &-heading {
+            &-text {
+                position: relative;
+                margin-bottom: 1rem;
+
+                h3 {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                    @include font-size(24);
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

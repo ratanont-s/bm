@@ -300,15 +300,17 @@
                 }
             }
         }
-        &-footer{
+
+        &-footer {
             background-color: transparent;
         }
     }
 
-  
+
     &:hover {
         background-color: $orange;
         color: $white;
+
         .card {
 
             &-title,
@@ -317,8 +319,9 @@
             &-price-normal strong {
                 color: $white;
             }
-            &-footer{
-                border-top-color: rgba($white,.25);
+
+            &-footer {
+                border-top-color: rgba($white, .25);
             }
         }
     }
@@ -365,10 +368,13 @@
                 }
             }
         }
-    }  
-    &-special{
+    }
+
+    &-special {
         background: url('../img/bg_card_cars.jpg') no-repeat center center/cover;
-        .card{
+
+        .card {
+
             &-title,
             &-text,
             &-detail,
@@ -378,8 +384,9 @@
             &-price-normal strong {
                 color: $white;
             }
-            &-footer{
-                border-top-color: rgba($white,.25);
+
+            &-footer {
+                border-top-color: rgba($white, .25);
             }
         }
     }
@@ -424,7 +431,7 @@
     }
 }
 
-.card-car-compare{
+.card-car-compare {
     width: 250px;
     position: fixed;
     left: 1rem;
@@ -433,13 +440,15 @@
     border-radius: 0;
     box-shadow: 0 0 .75rem rgba(black, .3);
     z-index: $zindex-fixed;
-    .card{
-        &-header{
+
+    .card {
+        &-header {
             background-color: transparent;
             cursor: pointer;
             position: relative;
             padding-right: 2rem;
-            &::before{
+
+            &::before {
                 content: '\f107';
                 font-family: 'Font Awesome 5 Free';
                 font-weight: 900;
@@ -448,39 +457,74 @@
                 right: 1rem;
                 transform: translateY(-50%);
             }
-            &[aria-expanded=false]{
-                &::before{
+
+            &[aria-expanded=false] {
+                &::before {
                     content: '\f106';
                 }
             }
         }
-        &-list{
+
+        &-list {
             list-style: none;
             padding-left: 0;
-            li{
+
+            li {
                 display: flex;
-                &:not(:last-child){
+
+                &:not(:last-child) {
                     margin-bottom: 0.5rem;
                 }
             }
-            &-text{
+
+            &-text {
                 font-size: small;
                 font-weight: 300;
-                b{
+
+                b {
                     display: block;
                     font-weight: 500;
                 }
             }
-            .btn{
+
+            .btn {
                 margin-left: auto;
-                &:hover{
+
+                &:hover {
                     opacity: 0.5;
                 }
             }
         }
-        &-footer{
+
+        &-footer {
             border-top-width: 0;
             background-color: transparent;
+        }
+    }
+}
+
+.card-info-car {
+    border-width: 0;
+    border-radius: 0;
+
+    .card {
+        &-title {
+            border-bottom: 2px solid $input-border-color;
+
+            span {
+                display: inline-block;
+                position: relative;
+                padding-bottom: 0.25rem;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -2px;
+                    width: 85%;
+                    border-bottom: 2px solid $orange;
+                }
+            }
         }
     }
 }
