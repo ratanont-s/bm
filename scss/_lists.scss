@@ -17,9 +17,6 @@
     }
     &-lg{
         li{
-            &:not(:last-child){
-                margin-right: .5rem;
-            }
             a{
                 img{
                     width: 40px;
