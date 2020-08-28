@@ -561,3 +561,109 @@
         }
     }
 }
+
+.card-detail-price{
+    border-width: 0;
+    border-radius: 0;
+    background-color: $light;
+    text-align: center;
+    padding: 1rem;
+    height: 100%;
+    .card-title{
+        margin-bottom: 0;
+        font-weight: normal;
+        small{
+            font-size: 14px;
+            font-weight: 300;
+            display: block;
+            opacity: 0.75;
+        }
+    }
+    &-special{
+        background: linear-gradient(270.29deg, #DA3B22 1.95%, #941D0A 99.78%);
+        color: $white;
+    }
+}
+
+.card-car-information{
+    background-color: $light;
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: 0 5px 6px rgba(black, .1);
+    .card{
+        &-title{
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-weight: normal;
+
+            span {
+                position: relative;
+                padding-bottom: 0.25rem;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 80%;
+                    border-bottom: 1px solid $orange;
+                }
+            }
+        }
+        &-list{
+            list-style: none;
+            padding-left: 0;
+            li{
+                padding: .5rem 0;
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid $border-color;
+                color: rgba($body-color,.5);
+                font-weight: 300;
+                b{
+                    color: $body-color;
+                    @include font-size(18);
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+.card-calculation-table{
+    background-color: $light;
+    border-width: 0;
+    border-radius: 0;
+    box-shadow: 0 5px 6px rgba(black, .1);
+    .card{
+        &-title{
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-weight: normal;
+    
+                span {
+                    position: relative;
+                    padding-bottom: 0.25rem;
+    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin: 0 auto;
+                        width: 80%;
+                        border-bottom: 1px solid $orange;
+                    }
+                }
+            }
+        &-form{
+            .form-control{
+                border: 1px solid $input-border-color;
+                border-radius: $input-border-radius;
+            }
+        }
+    }
+}
