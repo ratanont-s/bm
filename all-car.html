@@ -106,64 +106,70 @@
         <div class="container py-5">
             <div class="row">
                 <div class="col-xl-3">
-                    <div class="card card-body card-search mb-3">
-                        <h2 class="card-title">
-                            <span>ค้นหารถ</span>
-                        </h2>
-                        <form action="#" class="form-row align-items-end">
-                            <div class="col-md col-xl-12 form-group">
-                                <label for="">ประเภท</label>
-                                <select name="" id="" class="form-control">
-                                    <option selected>โปรดเลือก</option>
-                                    <option value="">ประเภท 1</option>
-                                    <option value="">ประเภท 2</option>
-                                </select>
-                            </div>
-                            <div class="col-md col-xl-12 form-group">
-                                <label for="">ยี้ห้อ</label>
-                                <select name="" id="" class="form-control">
-                                    <option selected>โปรดเลือก</option>
-                                    <option value="">ยี้ห้อ 1</option>
-                                    <option value="">ยี้ห้อ 2</option>
-                                </select>
-                            </div>
-                            <div class="col-md col-xl-12 form-group">
-                                <label for="">รุ่นรถ</label>
-                                <select name="" id="" class="form-control">
-                                    <option selected>โปรดเลือก</option>
-                                    <option value="">รุ่นรถ 1</option>
-                                    <option value="">รุ่นรถ 2</option>
-                                </select>
-                            </div>
-                            <div class="col-md col-xl-12 form-group">
-                                <label for="">ช่วงผ่อน</label>
-                                <select name="" id="" class="form-control">
-                                    <option selected>โปรดเลือก</option>
-                                    <option value="">ช่วงผ่อน 1</option>
-                                    <option value="">ช่วงผ่อน 2</option>
-                                </select>
-                            </div>
-                            <div class="col-md-auto col-xl-12 form-group">
-                                <button type="submit" class="btn btn-orange btn-block">ตกลง</button>
-                            </div>
-                            <div class="col-md-auto col-xl-12 form-group mb-xl-0">
-                                <button type="reset" class="btn btn-link btn-block text-dark"><i
-                                        class="fas fa-sync"></i> reset
-                                    all</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm col-xl-12 mb-3">
-                            <a href="#" class="link-img">
-                                <img src="./assets/img/New_cars.png" alt="รถเข้าใหม่ ดูรถทั้งหมด" class="w-100">
-                            </a>
+                    <button class="btn btn-primary btn-block d-md-none mb-3" type="button" data-toggle="collapse"
+                        data-target="#collapseCarSearch">
+                        <i class="fas fa-search"></i> ค้นหารถ
+                    </button>
+                    <div class="collapse d-md-block" id="collapseCarSearch">
+                        <div class="card card-body card-search mb-3">
+                            <h2 class="card-title">
+                                <span>ค้นหารถ</span>
+                            </h2>
+                            <form action="#" class="form-row align-items-end">
+                                <div class="col-md col-xl-12 form-group">
+                                    <label for="">ประเภท</label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>โปรดเลือก</option>
+                                        <option value="">ประเภท 1</option>
+                                        <option value="">ประเภท 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-md col-xl-12 form-group">
+                                    <label for="">ยี้ห้อ</label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>โปรดเลือก</option>
+                                        <option value="">ยี้ห้อ 1</option>
+                                        <option value="">ยี้ห้อ 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-md col-xl-12 form-group">
+                                    <label for="">รุ่นรถ</label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>โปรดเลือก</option>
+                                        <option value="">รุ่นรถ 1</option>
+                                        <option value="">รุ่นรถ 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-md col-xl-12 form-group">
+                                    <label for="">ช่วงผ่อน</label>
+                                    <select name="" id="" class="form-control">
+                                        <option selected>โปรดเลือก</option>
+                                        <option value="">ช่วงผ่อน 1</option>
+                                        <option value="">ช่วงผ่อน 2</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-auto col-xl-12 form-group">
+                                    <button type="submit" class="btn btn-orange btn-block">ตกลง</button>
+                                </div>
+                                <div class="col-md-auto col-xl-12 form-group mb-xl-0">
+                                    <button type="reset" class="btn btn-link btn-block text-dark"><i
+                                            class="fas fa-sync"></i> reset
+                                        all</button>
+                                </div>
+                            </form>
                         </div>
-                        <div class="col-sm col-xl-12 mb-5">
-                            <a href="#" class="link-img">
-                                <img src="./assets/img/Special_car_price.png" alt="รถราคาพิเศษ ดูรถทั้งหมด"
-                                    class="w-100">
-                            </a>
+                        <div class="row">
+                            <div class="col-sm col-xl-12 mb-3">
+                                <a href="#" class="link-img">
+                                    <img src="./assets/img/New_cars.png" alt="รถเข้าใหม่ ดูรถทั้งหมด" class="w-100">
+                                </a>
+                            </div>
+                            <div class="col-sm col-xl-12 mb-5">
+                                <a href="#" class="link-img">
+                                    <img src="./assets/img/Special_car_price.png" alt="รถราคาพิเศษ ดูรถทั้งหมด"
+                                        class="w-100">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -744,21 +750,22 @@
 
     <!-- เปรียบเทียบรถ -->
     <div class="card card-car-compare">
-        <h5 class="card-header" data-toggle="collapse" href="#carCompareCollapse" aria-expanded="true"><span class="text-orange">เปรียบเทียบรถ</span>(3)</h5>
-        <div class="collapse show" id="carCompareCollapse">
+        <h5 class="card-header" data-toggle="collapse" href="#carCompareCollapse" aria-expanded="false"><span
+                class="text-orange">เปรียบเทียบรถ</span>(3)</h5>
+        <div class="collapse" id="carCompareCollapse">
             <div class="card-body">
                 <ul class="card-list">
                     <li>
                         <div class="card-list-text">
                             <b>1. Toyote camry</b>
-                        short Detail of the car
+                            short Detail of the car
                         </div>
                         <button type="button" class="btn"><i class="fas fa-times"></i></button>
                     </li>
                     <li>
                         <div class="card-list-text">
                             <b>2. Toyote camry</b>
-                        short Detail of the car
+                            short Detail of the car
                         </div>
                         <button type="button" class="btn"><i class="fas fa-times"></i></button>
                     </li>
